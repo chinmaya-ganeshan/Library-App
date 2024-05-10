@@ -2,13 +2,13 @@
 
 # Create your models here.
 from django.db import models
-#DataFlair Models
+# Models
 class app(models.Model):
     name = models.CharField(max_length = 50)
     picture = models.ImageField()
     author = models.CharField(max_length = 30, default = 'annonymous')
     email = models.EmailField(blank = True)
-    describe = models.TextField(default = 'DataFlair Django tutorials')
+    describe = models.TextField(default = 'Easy to Learn')
     def __str__(self):
         return self.name
         
