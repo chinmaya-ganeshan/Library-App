@@ -6,7 +6,7 @@ from .models import app
 from .forms import BookCreate
 from django.http import HttpResponse
 
-#DataFlair
+
 def index(request):
     shelf = app.objects.all()
     return render(request, 'book/library.html', {'shelf': shelf})
