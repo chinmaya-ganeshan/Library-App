@@ -10,7 +10,7 @@ urlpatterns = [
     path('delete/<int:book_id>', views.delete_book)
 ]
 
-#DataFlair
+
 if DEBUG:
     urlpatterns += static(STATIC_URL, document_root = STATIC_ROOT)
     urlpatterns += static(MEDIA_URL, document_root = MEDIA_ROOT)
